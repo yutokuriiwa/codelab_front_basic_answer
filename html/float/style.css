@@ -1,0 +1,46 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #f0f8ff;
+}
+* {
+  box-sizing: border-box;
+}
+.cf::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap {
+  max-width: calc(1280/1920*100%);
+  margin: 50px auto;
+  font-size: 2rem;
+  text-align: center;
+}
+.header {
+  background: #e6e6fa;
+  padding: 5rem 0;
+}
+.main {
+  height: 300px;
+}
+.left {
+  background: #fff8dc;
+  width: 20%;
+  float: left;
+  height: 100%;
+  line-height: 300px;
+}
+.right {
+  background: #fa8072;
+  width: 20%;
+  float: right;
+  height: 100%;
+  line-height: 300px;
+}
+.footer {
+  background: #add8e6;
+  padding: 5rem 0;
+}
