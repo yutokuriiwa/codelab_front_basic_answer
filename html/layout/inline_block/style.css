@@ -1,0 +1,38 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #f0f8ff;
+}
+* {
+  box-sizing: border-box;
+}
+.cf::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap {
+  max-width: calc(1280/1920*100%);
+  margin: 50px auto;
+  /* ホワイトスペースに隙間が出来るので親要素のフォントサイズを0にする */
+  font-size: 0;
+  text-align: center;
+}
+
+.nav {
+  background: rgb(190, 152, 152);
+  display: inline-block;
+  width: 30%;
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+.column {
+  background: rgb(128, 194, 150);
+  display: inline-block;
+  width: 70%;
+  font-size: 2rem;
+  vertical-align: middle;
+}
