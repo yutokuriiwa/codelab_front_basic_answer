@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+nav {
+  width: 600px;
+  margin: 50px auto;
+}
+
+ul {
+  display: flex;
+  background: wheat;
+}
+
+li {
+  width: 100px;
+  height: 50px;
+  background: url(./sprite.png) no-repeat;
+}
+
+li:hover {
+  transition: .3s;
+}
+
+/* 以下から記述する */
+
+ul {
+  background-image: url(./sprite.png);
+}
+
+ul li {
+  background-position-x: 0%;
+}
+
+ul li:nth-child(2) {
+  background-position-x: 20%;
+}
+
+ul li:nth-child(3) {
+  background-position-x: 40%;
+}
+
+ul li:nth-child(4) {
+  background-position-x: 60%;
+}
+
+ul li:nth-child(5) {
+  background-position-x: 80%;
+}
+
+ul li:nth-child(6) {
+  background-position-x: 100%;
+}
+
+ul li:hover {
+  background-position-y: 100%;
+}
