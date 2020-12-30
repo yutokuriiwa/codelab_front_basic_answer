@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>テーブル</title>
+  <style>
+    h1,
+    h2 {
+      text-align: center;
+    }
+    table {
+      border-collapse: collapse;
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    th {
+      background: #d3d3d3;
+      width: 30%;
+      text-align: left;
+      padding: 10px;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    input[type="text"] {
+      width: 90%;
+      display: block;
+      height: 30px;
+    }
+
+    label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+
+    input[type="radio"] {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    .radio-item {
+      padding-top: 5px;
+      display: inline-block;
+    }
+
+    select {
+    font-size: 15px;
+    vertical-align: middle;
+    }
+
+    option {
+      padding: 1px;
+    }
+
+    textarea {
+      display: block;
+      resize: none;
+      width: 90%;
+    }
+
+    input[type="submit"] {
+      display: block;
+      width: 200px;
+      margin: 50px auto;
+      padding: 15px 0;
+      font-size: 20px;
+      color: #fff;
+      background: #1e90ff;
+    }
+  </style>
+</head>
+<body>
+<h1>フォーム練習</h1>
+
+<form action="#" method="POST">
+  <table border="1">
+    <thead><h2>お問い合わせ</h2></thead>
+    <tbody>
+      <tr>
+        <th>お名前</th>
+        <td><input type="text" name="name"></td>
+      </tr>
+      <tr>
+        <th>ご住所</th>
+        <td>
+          <input type="text" name="name"></td>
+      </tr>
+      <tr>
+        <th>性別</th>
+        <td>
+          <label><input type="radio" name="gender" value="male" checked><span class="radio-item">男性</span></label>
+          <label><input type="radio" name="gender" value="female"><span class="radio-item">女性</span></label>
+        </td>
+      </tr>
+      <tr>
+        <th>お問い合わせ種別</th>
+        <td>
+          <select name="confirm-type">
+            <option value="1">資料請求</option>
+            <option value="2">契約について</option>
+            <option value="3">その他</option>
+          </select>
+         </td>
+      </tr>
+      <tr>
+        <th>ご希望の連絡方法 <br>(複数選択可)</th>
+        <td>
+          <label>
+            <input type="checkbox" name="mail"><span class="radio-item">メール</span>
+          </label>
+          <label>
+            <input type="checkbox" name="tel"><span class="radio-item">電話</span>
+          </label>
+          <label>
+            <input type="checkbox" name="visit"><span class="radio-item">訪問</span>
+          </label>
+         </td>
+      </tr>
+      <tr>
+        <th>お問い合わせ内容</th>
+        <td><textarea name="content" cols="30" rows="10"></textarea></td>
+      </tr>
+    </tbody>
+  </table>
+  <input type="submit" value="送信">
+</form>
+</body>
+</html>
