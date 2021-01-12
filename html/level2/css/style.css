@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+.wrapper,
+.left {
+  height: 100%;
+  font-size: 62.5%; /*1remが10pxになるように調整する*/
+}
+.wrapper {
+  position: relative;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+.clearFix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/**************************ナビゲーション***/
+.left {
+  width: 30%;
+  background: #006599;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.logo {
+  font-size: 3.8rem;
+  color: white;
+  text-align: center;
+  padding: 4.5rem 0 2rem 0;
+}
+.logo p {
+  margin: 1rem 0;
+}
+.sideNav {
+  display: flex;
+  justify-content: center;
+}
+.sideNav ul {
+  line-height: 3rem;
+}
+.sideNav li {
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: white;
+  padding: 1.8rem 3rem;
+}
+/**************************コンテンツ***/
+.content {
+  padding: 8rem 4rem 3rem 8rem;
+}
+.right {
+  width: 70%;
+  height: 100%;
+  float: right;
+}
+.mainImage img {
+  width: 100%;
+}
+/*****Welcome to Neaty Design***/
+.welcome {
+  margin-bottom: 10rem;
+}
+.welcomeInnerText1 {
+  font-size: 4.8rem;
+  color: #006599;
+  margin-bottom: 4.5rem;
+}
+.welcomeInnerText2,
+.aboutInnerText2 {
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: 300;
+  margin-bottom: 1.6rem;
+}
+/*****About the team***/
+.about {
+  display: flex;
+  margin-bottom: 10rem;
+}
+.aboutInner {
+  width: 65%;
+  padding: 0 1.5rem;
+}
+.aboutInnerText1 {
+  font-size: 3.5rem;
+  color: #006599;
+  margin-bottom: 4.5rem;
+}
+.aboutImage {
+  width: 35%;
+  padding-right: 1.5rem;
+}
+.aboutImage img {
+  width: 100%;
+}
+.button {
+  background: #006599;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-align: center;
+  display: inline-block;
+  padding: 1.8rem 3.5rem;
+}
+.button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/********gallery***/
+.gallery {
+  width: 100%;
+  margin-bottom: 10rem;
+}
+.galleryInnerText1 {
+  font-size: 3.5rem;
+  color: #006599;
+  margin-bottom: 3rem;
+}
+.gallery1 img {
+  width: calc(100% / 5);
+  display: block;
+  float: left;
+}
+.gallery2 {
+  margin: 10rem 0;
+}
+.gallery2 img {
+  width: calc(100% / 3);
+  display: block;
+  float: left;
+}
+.gallery3 img {
+  width: calc(100% / 4);
+  display: block;
+  float: left;
+}
+.gallery1 img:not(:last-child),
+.gallery2 img:not(:last-child),
+.gallery3 img:not(:last-child) {
+  padding-right: 0.6rem;
+}
+/**********contact***/
+.contact {
+  margin-bottom: 10rem;
+}
+.contactInnerText1 {
+  font-size: 3.5rem;
+  color: #006599;
+  margin-bottom: 3rem;
+}
+.contactInner {
+  display: flex;
+}
+form {
+  margin-bottom: 1.6rem;
+}
+.form {
+  width: 50%;
+  padding-right: 1.5rem;
+}
+input {
+  width: 100%;
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1.6rem;
+  border: solid 0.1rem #006599;
+  padding: 0.8rem 1.2rem;
+}
+textarea {
+  width: 100%;
+  font-size: 2rem;
+  border: solid 0.1rem #006599;
+  resize: none;
+  padding: 0.8rem 1.2rem;
+}
+
+
+
+/*
+Google Chrome, Safari, Opera 15+, Android, iOS
+::-webkit-input-placeholder
+
+Firefox 18-
+:-moz-placeholder
+
+Firefox 19+
+::-moz-placeholder
+
+IE 10+
+:-ms-input-placeholder
+*/
+input::-webkit-input-placeholder {
+  font-size: 2rem;
+  color: #006599;
+  font-weight: 300;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+textarea::-webkit-input-placeholder {
+  font-size: 2rem;
+  color: #006599;
+  font-weight: 300;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+input:-moz-placeholder {
+  font-size: 2rem;
+  color: #006599;
+  font-weight: 300;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+textarea:-moz-placeholder {
+  font-size: 2rem;
+  color: #006599;
+  font-weight: 300;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+input::-moz-placeholder {
+  font-size: 2rem;
+  color: #006599;
+  font-weight: 300;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+textarea::-moz-placeholder {
+  font-size: 2rem;
+  color: #006599;
+  font-weight: 300;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+input:-ms-input-placeholder {
+  font-size: 2rem;
+  color: #006599;
+  font-weight: 300;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+textarea:-ms-input-placeholder {
+  font-size: 2rem;
+  color: #006599;
+  font-weight: 300;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.contactInnerText2 {
+  width: 50%;
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: 300;
+  padding: 0 1.5rem 0 4.2rem;
+}
+.contactInnerText2 :first-child {
+  margin-bottom: 1.6rem;
+}
+/**************************フッター***/
+footer {
+  font-size: 2rem;
+  font-weight: 300;
+}
+footer a {
+  text-decoration: none;
+  color: #006599;
+}
