@@ -1,0 +1,266 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+a:hover {
+  opacity: .8;
+}
+body {
+  background: url(../img/bg_tekusu.jpg);
+  font-family: Roboto, YuGothic, 游ゴシック, sans-serif;
+}
+.header::after,
+.footer::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-image: url(../img/bg_giza.png);
+}
+/*****************header***/
+header {
+  background: #858585;
+  height: 100px;
+  padding-top: 24px;
+  position: relative;
+}
+.headerInner {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerInner :first-child {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 10px;
+}
+.headerTop :last-child {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 23px;
+  color: #eee;
+  opacity: .5;
+  margin-top: 5px;
+}
+/*headerのギザギザ*/
+.header::after {
+  background-position-y: 55px;
+  bottom: -10px;
+}
+
+.headerBottom {
+  display: flex;
+  align-items: center;
+}
+
+/***Share***/
+.share ul {
+  display: flex;
+}
+.share li {
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  transition: .3s;
+}
+.share li:nth-child(1) {
+  background-position-x: 0;
+}
+.share li:nth-child(2) {
+  background-position-x: -32px;
+}
+.share li:not(:last-child) {
+  margin-right: 2px;
+}
+/* share hover時 */
+.share li:nth-child(1):hover {
+  background-position-y: -32px;
+}
+.share li:nth-child(2):hover {
+  background-position-y: -32px;
+}
+
+/***************content***********************************/
+.content {
+  width: 980px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+/***************left nav***/
+/***cart wrapping***/
+.lNav {
+  width: 160px;
+}
+.login,
+.search form,
+.category a {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.iLogin {
+  background-position: -64px -32px;
+}
+/***search***/
+.lNavTitle {
+  font-size: 12px;
+  color: #333;
+  margin: 10px 0 5px 5px;
+}
+.iSearch {
+  background-position: -64px 0;
+}
+.search input {
+  border: none;
+  padding: 10px;
+}
+/***caregory***/
+.category li:not(:first-child) {
+  margin-top: 1px;
+}
+/***info***/
+.info {
+  margin: 20px 0 40px 0;
+}
+.info li {
+  padding: 8.4px 20px;
+}
+.info span::before {
+  content: "-";
+  color: #333;
+  font-size: 14px;
+  margin-right: 4.2px;
+}
+
+
+/***************main***/
+main {
+  font-family: YuGothic, 游ゴシック, sans-serif;
+  width: 500px;
+}
+main h1 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #333;
+  margin: 15px 0 11px 0;
+}
+.date,
+.lead {
+  font-size: 12px;
+  line-height: 19px;
+}
+.imgVisual {
+  margin: 18px 0;
+}
+.imgVisual img {
+  width: 100%;
+}
+main h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 15px 0 15px 5px;
+
+  padding-left: 15px;
+  border-left: solid 5px #333;
+}
+.mainText {
+  font-size: 12px;
+  line-height: 19px;
+}
+/***************right nav***/
+.rNav {
+  width: 250px;
+}
+.prof {
+  margin-bottom: 10px;
+}
+.prof h2 {
+  font-size: 20px;
+}
+.prof p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+.imgBnr {
+  margin-bottom: 10px;
+}
+.rNav .rankTtl {
+  font-family: Roboto, YuGothic, 游ゴシック, sans-serif;
+  background: #fff;
+  margin-bottom: 5px;
+  color: #333;
+  width: 250px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.iKing {
+  background-position: -96px 0;
+}
+.rNav ul {
+  font-size: 12px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+.rNav li {
+  line-height: 16.8px;
+  padding: 7.2px 10px 7.2px 32px;
+  position: relative;
+}
+.rNav li:not(:last-child) {
+  border-bottom: solid 2px rgb(221, 221, 221);
+}
+.rank {
+  position: absolute;
+  top: 7.2px;
+  left: 10px;
+  color: #000;
+}
+.rNav dl {
+  padding-left: 5px;
+}
+.imgBnrArea :nth-child(2){
+  margin:5px 0;
+}
+/***************footer***/
+footer {
+  background: #858585;
+  position: relative;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #eee;
+}
+footer::before {
+  top: -10px;
+  background-position: 0 10px;
+
+}
