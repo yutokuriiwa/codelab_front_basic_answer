@@ -1,0 +1,412 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Playfair Display', serif;
+}
+ul {
+  list-style: none;
+}
+.wrapper {
+  position: relative;
+}
+.clearFix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*********************header***/
+.slider {
+  position: relative;
+  z-index: -1;
+}
+.slider img {
+  width: 100%;
+}
+.sliderInner {
+  color: #ffffff;
+  margin-left: 74.5px;
+  padding-left: 15px;
+  position: absolute;
+  top: 0;
+}
+.titleEn {
+  margin-top: 30px;
+  font-size: 50px;
+}
+.titleJp {
+  margin: 106px 0 15px 100px;
+  font-size: 72px;
+  line-height: 84px;
+}
+.description {
+  margin: 0 0 15px 100px;
+}
+nav {
+  width: 346px;
+  color: #ffffff;
+  background-color: #d83f87;
+  font-size: 25px;
+  line-height: 34px;
+  padding: 55px;
+  position: absolute;
+  top: 0;
+  right: 74.5px;
+}
+/*********************about***/
+.aboutContent {
+  width: 1200px;
+  margin: 0 auto;
+  color: #6a6a6a;
+}
+.about {
+  position: relative;
+  height: 580px;
+}
+.aboutInner {
+  width: 900px;
+  margin-top: -100px;
+  padding: 35px;
+  background-color: #ffffff;
+}
+.aboutImg {
+  margin-top: -135px;
+  margin-bottom: 28px;
+}
+.aboutDiscription1 {
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+.aboutDiscription2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.button {
+  width: 134px;
+  height: 46px;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #e581b0;
+  border-bottom: 5px solid #d83f87;
+  padding: 10px 22px;
+  margin-top: 14px;
+}
+.yoga {
+  position: absolute;
+  top: 35px;
+  right: 335px; /*コンテンツ幅(1200px) -　.aboutInner幅(900px) + .aboutInnerのpadding(35px)*/
+}
+.yoga1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.yoga1 span {
+  margin-left: 20px;
+}
+.yoga2 {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.yoga3 {
+  color: #e581b0;
+  font-size: 15px;
+  text-decoration: none;
+}
+.yogaImg {
+  width: 300px;
+  height: 545px;
+  padding-top: 35px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/*********************course***/
+.courseContent {
+  background-image: url("../images/feature_bg.png");
+  background-repeat: no-repeat;
+  padding: 110px 0px;
+  text-align: center;
+  color: #ffffff;
+}
+.courseInner {
+  display: flex;
+}
+.course {
+  padding: 55px 15px 0 15px;
+}
+.course span {
+  font-size: 100px;
+}
+.courseTitle {
+  font-size: 30px;
+  padding: 20px 0 12px 0;
+}
+.courseDiscription {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.course .button {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*********************program***/
+.progContent {
+  margin: 0 74.5px;
+  padding: 0 15px;
+  /* height: 850px; */
+}
+.progTitle {
+  font-size: 40px;
+  color: #6a6a6a;
+  text-align: center;
+  margin-top: 85px;
+}
+.progImage {
+  width: calc(100% / 3);
+  margin: 50px 0 80px 0;
+  padding: 0 15px;
+  float: left;
+  position: relative;
+}
+.progImage img {
+  width: 100%;
+}
+.programDiscription {
+  color: #ffffff;
+  background-color: #d83f87;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: -15px;
+}
+.discriptionInner1 {
+  font-size: 20px;
+}
+.discriptionInner2 {
+  font-size: 15px;
+}
+/*********************coaches***/
+.coaches {
+  margin-top: 200px;
+  background-image: url(../images/coaches_bg.jpg);
+  background-repeat: no-repeat;
+}
+.coachesInner {
+  margin-left: calc(89.5px + 15px);
+  margin-right: 74.5px;
+  padding-right: 15px;
+  position: relative;
+  height: 660px;
+}
+.coachItem {
+  float: left;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+.coachItem:hover {
+  /* animation名 かける時間 変化の度合い 繰り返し回数（無限） animationの再生方向*/
+  animation: fuwafuwa 0.2s ease-in-out infinite alternate;
+}
+@keyframes fuwafuwa {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
+.coachItem img {
+  width: 100%;
+}
+.noPhoto {
+  background: linear-gradient(left, #8165a6, #d83f87) repeat scroll 0 0;
+  background: -webkit-linear-gradient(left, #8165a6, #d83f87) repeat scroll 0 0;
+  background: -moz-linear-gradient(left, #8165a6, #d83f87) repeat scroll 0 0;
+  background: -o-linear-gradient(left, #8165a6, #d83f87) repeat scroll 0 0;
+  color: #ffffff;
+}
+.noPhoto p {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: calc(50% - 20px);
+  text-align: center;
+  font-size: 30px;
+}
+.coachesInner > :nth-child(1) {
+  width: 120px;
+  height: 120px;
+  top: 100px;
+  left: 0;
+}
+.coachesInner :nth-child(2) {
+  width: 180px;
+  height: 180px;
+  top: 97px;
+  left: 150px;
+}
+.coachesInner :nth-child(3) {
+  width: 270px;
+  height: 270px;
+  top: 65px;
+  left: 365px;
+}
+.coachesInner :nth-child(4) {
+  width: 110px;
+  height: 110px;
+  top: 162px;
+  left: 650px;
+}
+.coachesInner :nth-child(5) {
+  width: 195px;
+  height: 195px;
+  top: 175px;
+  left: 760px;
+}
+.coachesInner > :nth-child(6) {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 162px;
+  left: 955px;
+}
+.coachesInner :nth-child(7) {
+  width: 135px;
+  height: 135px;
+  top: 245px;
+  left: 38px;
+}
+.coachesInner :nth-child(8) {
+  width: 195px;
+  height: 195px;
+  top: 290px;
+  left: 190px;
+}
+.coachesInner :nth-child(9) {
+  width: 180px;
+  height: 180px;
+  top: 360px;
+  left: 400px;
+}
+.coachesInner > :nth-child(10) {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 316px;
+  left: 594px;
+}
+.coachesInner :nth-child(11) {
+  width: 135px;
+  height: 135px;
+  top: 405px;
+  left: 795px;
+}
+.coachesInner :nth-child(12) {
+  width: 195px;
+  height: 195px;
+  top: 290px;
+  left: 940px;
+}
+.coachesInner :nth-child(13) {
+  width: 195px;
+  height: 195px;
+  top: 408px;
+  left: 0;
+}
+/*********************contact***/
+.contact {
+  background: linear-gradient(left, #8165a6, #d83f87) repeat scroll 0 0;
+  background: -webkit-linear-gradient(left, #8165a6, #d83f87) repeat scroll 0 0;
+  background: -moz-linear-gradient(left, #8165a6, #d83f87) repeat scroll 0 0;
+  background: -o-linear-gradient(left, #8165a6, #d83f87) repeat scroll 0 0;
+}
+.contactInner {
+  margin-right: 0 74.5px;
+  padding-right: 0 15px;
+  position: relative;
+}
+.footerImg{
+  width: 50%;
+  height: 465px;
+  background-image: url(../images/footer_img.png);
+  background-repeat: no-repeat;
+  background-position-x: 89.5px;
+  background-position-y: 45px;
+  position: absolute;
+}
+.witeArea {
+  width: 50%;
+  height: 450px;
+  padding-top: 50px;
+  padding: 0 15px;
+  float: left;
+  background-color: #ffffff;
+}
+.witeAreaInner {
+  width: 335px;
+  float: right;
+  margin-top: 50px;
+}
+.witeAreaInner :first-child {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.witeAreaInner :last-child {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.rContact {
+  width: 50%;
+  float: left;
+  padding-left: 50px;
+  margin-top: 50px;
+  color: #ffffff;
+}
+.rContactInner1 {
+  float: left;
+}
+.rContactInner1 p{
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+.rContactInner1 li{
+  font-size: 15px;
+  line-height: 30px;
+}
+.rContactInner2 {
+  float: left;
+  padding-left: 200px;
+}
+.rContactInner2 p{
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+.rContactInner2 li {
+  display: flex;
+}
+.rContactInner2 li p{
+  font-size: 15px;
+  line-height: 24px;
+  margin-left: 10px;
+}
+footer {
+  padding-top: 100px;
+  padding-bottom: 45px;
+  text-align: center;
+  font-size: 13px;
+  color: #444444;
+}
+footer span{
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0 5px;
+}
+
